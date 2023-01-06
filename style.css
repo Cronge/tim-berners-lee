@@ -59,24 +59,29 @@ img {
 .nav-section {
     display: flex;
     justify-content: center;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-section:nth-child(1) {
     justify-content: left;
     border: none;
-    width: 22%;
+    flex-basis: calc(100% / 3);
 }
 
 .nav-section:nth-child(2),
 .nav-section:nth-child(3),
 .nav-section:nth-child(4) {
-    flex-grow: calc(100 / 3);
+    flex-grow: 1;
+}
+
+.nav-section:nth-child(3),
+.nav-section:nth-child(4) {
+    border: none;
 }
 
 .nav-section:nth-child(5) {
-    width: 22%;
+    flex-basis: calc(100% / 3);
 }
 
 a {
